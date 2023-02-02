@@ -1,18 +1,33 @@
-var notaDoPrimeiroBimestre = n1
-var notaDoSegundoBimestre = n2
-var notaDoTerceiroBimestre = n3
-var notaDoQuartoBimestre = n4
-var NotaFinal = (notaDoPrimeiroBimestre + notaDoSegundoBimestre + notaDoTerceiroBimestre + notaDoQuartoBimestre) /4
-//Váriaveis usadas na forma de notação, e que cada uma pode ser tambem uma outra notação pra ser usada em uma média final//
-console.log(NotaFinal)
+function ConverterDolar() {
+  var valorElemento = document.getElementById("valorD");
+  var valorD = parseFloat(valorElemento.value);
+  console.log(typeof valorD);
+  var valorEmReal = (valorD * 5.07).toFixed(2);
 
-function media() { 
-        var n1= document.getElementById("n1").value
-        var n2= document.getElementById("n2").value
-        var n3= document.getElementById("n3").value
-        var n4= document.getElementById("n4").value
-        
-        var media = (Number(n1) + Number(n2) + Number(n3) + Number(n4) ) / 4
-        alert(` Sua nota é: ${media}`)
-     
-      }
+  Printar(valorEmReal);
+}
+
+function ConverterEuro() {
+  var valorElemento = document.getElementById("valorE");
+  var valorE = parseFloat(valorElemento.value);
+  console.log(typeof valorE);
+  var valorEmReal = (valorE * 5.53).toFixed(2);
+
+  Printar(valorEmReal);
+}
+
+function ConverterYuan() {
+  var valorElemento = document.getElementById("valorY");
+  var valorY = parseFloat(valorElemento.value);
+  console.log(typeof valorY);
+  var valorEmReal = (valorY * 0.74).toFixed(2);
+
+  Printar(valorEmReal);
+}
+
+function Printar(valorEmReal) {
+  var elementoValorConvertido = document.getElementById("valorConvertido");
+  var valorConvertido = "O resultado em Real é R$ " + valorEmReal;
+  elementoValorConvertido.innerHTML = valorConvertido;
+  alert(valorConvertido);
+}

@@ -1,40 +1,33 @@
-
-<html>
-    <head>
-      <title> <h1>Imersão Dev Alura - Aula 01</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-      <div class="container">
-        <h1 class="page-title">
-        Calculadora de média</h1>
-        <p class="page-subtitle">
-        <label for="notaDoPrimeiroBimestre">Nota 1º Bimestre: </label>
-      <input type="number" id="n1"  min="1" max="10"></p>
-      <p class="page-subtitle">
-          <label for="notaDoSegundoBimestre">Nota 2º Bimestre: </label>
-          <input type="number" id="n2" min="0" max="10" id=n2>
-      </p>
-      <p class="page-subtitle">
-          <label for="notaDoTerceiroBimestre">Nota 3º Bimestre: </label>
-          <input type="number" id="n3" name="quantity" min="0" max="10" id=n3>
-      </p>
-      <p class="page-subtitle">
-          <label for="notaDoQuartoBimestre">Nota 4º Bimestre: </label>
-          <input type="number" id="n4" name="quantity" min="0" max="10" id=n4>
-      </p>
-  </form>
-  <form>
-    <input type="button" value="Média" onclick="media()">
-   
-  </form>
-        </p>
-        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="">
-      </div>
-      <a href="https://alura.com.br/" target="_blank">
-      <img id="mergulhador" src="https://www.alura.com.br/assets/img/home/homeNova/ilustra-alura-escafandro.1647533643.svg">
-      </a>
-    <script src="js/main.js"></script>
-     </body>
-
-  </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de moeda </title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="page-title">
+      Conversor de moedas
+    </h1>
+    <p class="page-subtitle">
+      Descubra os valores em Real R$
+    </p>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""><br><br>
+    <label for="moeda">Insira o valor em Dólar<img src="https://4.bp.blogspot.com/-CtBZ0q07Itw/VY4nDetKzcI/AAAAAAAAAiE/wrY2DVPq2t0/s1600/american-flag.png" img /></label><br></p>
+    <input type="number" id="valorD" size="10" /><br>
+    <button type="submit" onclick="ConverterDolar()">Converter</button>
+    <p><label for="moeda">Insira o valor em Euro <img src="https://ak.picdn.net/shutterstock/videos/1887895/thumb/1.jpg" img /></p></label></p>
+    <input type="number" id="valorE" size="10" /><br>
+    <button type="submit" onclick="ConverterEuro()">Converter</button>
+    <p><label for="moeda">Insira o valor em Yuan <img src="https://cdn.wallpapersafari.com/3/45/ewgc8W.jpg" img /></label><br></p>
+    <input type="number" id="valorY" size="10" /><br>
+    <button type="submit" onclick="ConverterYuan()">Converter</button>
+    <h2 id="valorConvertido" style="color:black;"></h2>
+  </div>
+  <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+</body>
+</html>
